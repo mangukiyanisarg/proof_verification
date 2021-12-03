@@ -55,3 +55,7 @@ def strong_password_validation(password):
         logging.error("strong_password_validation : exception : {}".format(e))
         message = ""
     return message    
+
+def allowed_file(filename):
+    return '.' in filename and \
+           (filename.rsplit('.', 1)[1]).lower() in ["pdf", "jpg", "jpeg", "png"]
