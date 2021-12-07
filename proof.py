@@ -26,15 +26,21 @@ def home():
     logging.info("start")
     return "Document Proof API Services"
 
-@app.route("/user-proof", methods=['POST'])
-def user_proof():
+@app.route("/id-proof", methods=['POST'])
+def id_proof():
+    """
+    Verify User Proof Service 
+    To Find Co-Ordinates of Text and Image Location 
+    Return the Score of Matching Text and Image Co-ordinates
+    
+    """
     logging.info("user_proof : Start")
     resp_dict={"object":None}
     try:
         user_seq_no = 1
         if user_seq_no > 0:
             image = request.files['image']
-            input_json = json.load(request.files['inputs'])
+            input_json = json.load(request.files['data'])
             if image:
                 str_time =  datetime.datetime.now().strftime('%d%m%Y%H%M%S')
                 image_file_name = str_time+".jpg"
@@ -47,18 +53,19 @@ def user_proof():
                 image.save(os.path.join(IMAGE_PATH,image_file_name))
                 image_read = cv2.imread(IMAGE_PATH+"/"+image_file_name)
                 
-                config_obj =  Config.query.filter(Config.id_type == input_json["id_type"]).all()
+                config_obj =  Config.query.filter(Config.id_type ==input_json["id_type"]).all()
                 logging.info(f"config_obj:{config_obj}")
                 
                 if input_json["id_type"]:
                     verified = verify(config_obj,image_read)
                 else:
-                    print("Id Type Required")
+                    # print("Id Type Required")
                     resp_dict["object"] = "Id Type Required"
                     
-                os.remove(IMAGE_PATH+"/"+image_file_name)
                 proof_dict={"score":verified}
                 resp_dict["object"] = proof_dict
+            else:
+                resp_dict["object"] = "Image Required"
                     
         else:
             resp_dict["msg"] = "Session Expired"
@@ -66,12 +73,21 @@ def user_proof():
     except Exception as e:
         logging.exception("user_proof : exception : {}".format(e))
         resp_dict["msg"] = "Internal Server Error"
+        
+    finally:
+        os.remove(IMAGE_PATH+"/"+image_file_name)
+        
     resp = jsonify(resp_dict)
     logging.debug("user_proof : end")
     return resp
 
-# Find Text Co-ordinates in Id Card & Generate Score of Matching
 def verify(config_obj,image):
+    """
+    Verify Text Method 
+    To Find Co-Ordinates of Text Location 
+    Calculate the Distance Between Two Texts and Ratio of Text
+    
+    """
     logging.info("verify : Start")
     try:
         verified_image = verify_image(image)
@@ -89,7 +105,7 @@ def verify(config_obj,image):
         
         # Find unique id version    
         version_all = db.session.query(Config.id_version).filter(Config.id_type==id_type).distinct(Config.id_version).all()
-        print(f"version_all:{version_all}")
+        # print(f"version_all:{version_all}")
         
         update_mean_dict ={}
         for version in version_all:
@@ -159,9 +175,9 @@ def verify(config_obj,image):
                 else:
                     result_dist.append({'id': version_numbers[i].id_version, 'type': 'image_breath_length', 'key': version_numbers[i].image_breath, 'value':0,'key1': version_numbers[i].image_length, 'value1':100})
                     
-            print(f"result_dist:{result_dist}")
+            # print(f"result_dist:{result_dist}")
             result_df = pd.DataFrame(result_dist)
-            print(f"result_df:{result_df}")
+            # print(f"result_df:{result_df}")
             
             grouped = result_df.groupby(['id'])
             mean = grouped['value'].agg(np.mean)
@@ -169,10 +185,10 @@ def verify(config_obj,image):
             mean_dict = mean.to_dict()
             update_mean_dict.update(mean_dict)
             
-        print(f"update_mean_dict:{update_mean_dict}")
+        # print(f"update_mean_dict:{update_mean_dict}")
         result_score_dict= list(update_mean_dict.values())
         result = max(result_score_dict)
-        print(f"result:{result}")
+        # print(f"result:{result}")
         return result
         
     except Exception as e:
@@ -180,8 +196,13 @@ def verify(config_obj,image):
     logging.debug("verify : end")
     return 0
 
-# Verify Image in Id Card and Find Co-ordinates of image location in Id Card 
 def verify_image(img):
+    """
+    Verify Image Method 
+    To Find Co-Ordinates of Image Location 
+    Calculate the Length and Breath of Image
+    
+    """
     logging.debug("verify_image : start")
     try:
         #Image

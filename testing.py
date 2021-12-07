@@ -4,7 +4,9 @@ import proof
 import unittest
 import json
 
-import io
+from io import BytesIO
+
+import ast
 
 app.route(proof)
 
@@ -24,16 +26,52 @@ class Flask_Test(unittest.TestCase):
         pass
 
     # Test User Proof
-    def test_user_proof(self):
-        url='/user-proof'
+    def test_proof_original(self):
+        url='/user-proof/PAN'
         
-        # mock_ data
-        mock_request_data={'image': ('pan_originapng.png'),
-                            "id_type":"PAN"}
+        with open('pan_originapng.png','rb') as img1:
+            imgStringIO1 = BytesIO(img1.read())
+        
+        mock_request_data={'image': (imgStringIO1, 'img1.jpg')}
 
-        response=self.app.post(url,data=json.dumps(mock_request_data),content_type='multipart/form-data')
+        response=self.app.post(url,data=mock_request_data, content_type='multipart/form-data')
         self.assertEqual(response.status_code, 200) 
-        self.assertEqual(response.object(score),100)
         
+        resp = response.data
+        dict_str = resp.decode("UTF-8")
+        mydata = ast.literal_eval(dict_str)
+        #print(mydata['object'])
+        self.assertEqual(mydata['object']['score'], 100) 
+        
+    def test_proof_tampared(self):
+        url='/user-proof/PAN'
+        
+        with open('aadhar.jpg','rb') as img1:
+            imgStringIO1 = BytesIO(img1.read())
+        
+        mock_request_data={'image': (imgStringIO1, 'img1.jpg')}
+
+        response=self.app.post(url,data=mock_request_data, content_type='multipart/form-data')
+        self.assertEqual(response.status_code, 200) 
+        
+        resp = response.data
+        dict_str = resp.decode("UTF-8")
+        mydata = ast.literal_eval(dict_str)
+        #print(mydata['object'])
+        self.assertEqual(mydata['object']['score'], 0)
+        
+    # def test_no_image(self):
+    #     url='/user-proof/PAN'
+        
+    #     with open('aadhar.jpg','rb') as img1:
+    #         imgStringIO1 = BytesIO(img1.read())
+        
+    #     mock_request_data={}
+
+    #     response=self.app.post(url,data=mock_request_data, content_type='multipart/form-data')
+    #     self.assertEqual(response.status_code, 200) 
+    #     resp = response.data
+    #     self.assertEqual(resp, 0)
+              
 if __name__ == "__main__":
     unittest.main()

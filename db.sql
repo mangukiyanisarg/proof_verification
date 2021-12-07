@@ -81,58 +81,48 @@ VALUES('AADHAR',1, 1,'MALE',110.0227,3.2963,86,-83);
 
 --- AADHAR id-version :2
 INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
-VALUES('AADHAR',2, 2,'DO',108.0227,2.8148,86,-83);
+VALUES('AADHAR',2, 2,'DO',108.0227,2.8148,82,-82);
 
 INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
-VALUES('AADHAR',2, 2,'MALE',108.0227,4.2963,86,-83);
+VALUES('AADHAR',2, 2,'MALE',108.0227,4.2963,82,-82);
 
 
 --- Driving id-version :1
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'issue',534.0459,3.3846);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Validity',534.0459,3.4615);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'issue',154.013,3.6667,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Nationality',257.6354,4.7778);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'Validity',154.013,4.2727,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Birth',257.6354,2.5455);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'Nationality',74.3303,5.2143,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Group',1371.6209,2.7857);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'Birth',74.3303,2.6667,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Fathers',1371.6209,4.5909);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'Group',404.9691,2.8462,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Endorsement',1300.0215,7.2609);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',1, 1,'Father''s',404.9691,4.8333,95,489);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',1, 1,'Signature',1300.0215,4.6154);
 
 --- Driving id-version :2
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'issue',530.0459,4.3846);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'issue',534.0459,3.3846,231,1320);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Validity',530.0459,4.4615);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'Validity',534.0459,3.4615,231,1320);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Nationality',250.6354,5.7778);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'Nationality',257.6354,4.7778,231,1320);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Birth',250.6354,5.5455);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'Birth',257.6354,2.5455,231,1320);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Group',1370.6209,3.7857);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'Group',1371.6209,2.7857,231,1320);
 
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Fathers',1370.6209,5.5909);
-
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Endorsement',1301.0215,8.2609);
-
-INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio) 
-VALUES('DRIVING',2, 2,'Signature',1300.0215,4.6154);
+INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
+VALUES('DRIVING',2, 2,'Father''s',1371.6209,4.5909,231,1320);

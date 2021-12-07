@@ -1,27 +1,320 @@
-PROOF 2021-12-03 12:39:54,346  root  INFO: user_proof : Start
-PROOF 2021-12-03 12:39:54,347  root  ERROR: user_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-07 14:08:45,866  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 14:08:46,043  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 14:08:48,649  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 14:08:48,660  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 14:08:48,901  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 14:08:48,902  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 14:08:50,267  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 14:08:50,451  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 14:08:52,822  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 14:08:52,837  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 14:08:53,081  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 14:08:53,081  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 14:08:53,241  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 14:08:53,450  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 14:08:55,959  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 14:08:55,976  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 14:08:56,294  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 14:08:56,295  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 14:08:56,475  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 14:08:56,694  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 14:08:59,678  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 14:08:59,696  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 14:09:00,028  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 14:09:00,029  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 14:32:59,779  root  INFO: start
+PROOF 2021-12-07 14:32:59,779  werkzeug  INFO: 192.168.43.149 - - [07/Dec/2021 14:32:59] "GET / HTTP/1.1" 200 -
+PROOF 2021-12-07 15:02:54,542  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:02:58,264  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:02:58,300  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:02:58,723  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:02:58,724  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:03:29,580  root  INFO: user_proof : Start
+PROOF 2021-12-07 15:03:29,594  root  INFO: True
+PROOF 2021-12-07 15:03:30,093  root  INFO: config_obj:[<Config 1>, <Config 2>, <Config 3>, <Config 4>, <Config 5>, <Config 6>, <Config 7>, <Config 8>]
+PROOF 2021-12-07 15:03:30,093  root  INFO: verify : Start
+PROOF 2021-12-07 15:03:30,093  root  DEBUG: verify_image : start
+PROOF 2021-12-07 15:03:30,525  root  INFO: faces:[[797 404  98  98]]
+PROOF 2021-12-07 15:03:30,525  root  INFO: cor1:(404, 797)
+PROOF 2021-12-07 15:03:30,525  root  INFO: cor2:(98, 797)
+PROOF 2021-12-07 15:03:30,525  root  INFO: cor3:(404, 98)
+PROOF 2021-12-07 15:03:30,525  root  INFO: cor4:(98, 98)
+PROOF 2021-12-07 15:03:30,526  root  INFO: breath:306
+PROOF 2021-12-07 15:03:30,526  root  INFO: length:699
+PROOF 2021-12-07 15:03:32,295  root  DEBUG: user_proof : end
+PROOF 2021-12-07 15:03:32,297  werkzeug  INFO: 127.0.0.1 - - [07/Dec/2021 15:03:32] "POST /user-proof/PAN HTTP/1.1" 200 -
+PROOF 2021-12-07 15:05:56,962  root  INFO: user_proof : Start
+PROOF 2021-12-07 15:05:56,969  root  INFO: True
+PROOF 2021-12-07 15:05:56,994  root  INFO: config_obj:[<Config 1>, <Config 2>, <Config 3>, <Config 4>, <Config 5>, <Config 6>, <Config 7>, <Config 8>]
+PROOF 2021-12-07 15:05:56,994  root  INFO: verify : Start
+PROOF 2021-12-07 15:05:56,995  root  DEBUG: verify_image : start
+PROOF 2021-12-07 15:05:57,149  root  INFO: faces:[[797 404  98  98]]
+PROOF 2021-12-07 15:05:57,149  root  INFO: cor1:(404, 797)
+PROOF 2021-12-07 15:05:57,149  root  INFO: cor2:(98, 797)
+PROOF 2021-12-07 15:05:57,150  root  INFO: cor3:(404, 98)
+PROOF 2021-12-07 15:05:57,150  root  INFO: cor4:(98, 98)
+PROOF 2021-12-07 15:05:57,150  root  INFO: breath:306
+PROOF 2021-12-07 15:05:57,150  root  INFO: length:699
+PROOF 2021-12-07 15:05:59,667  root  DEBUG: user_proof : end
+PROOF 2021-12-07 15:05:59,670  werkzeug  INFO: 127.0.0.1 - - [07/Dec/2021 15:05:59] "POST /user-proof/PAN HTTP/1.1" 200 -
+PROOF 2021-12-07 15:20:28,464  root  INFO: user_proof : Start
+PROOF 2021-12-07 15:20:28,466  root  INFO: True
+PROOF 2021-12-07 15:20:28,479  root  INFO: config_obj:[<Config 1>, <Config 2>, <Config 3>, <Config 4>, <Config 5>, <Config 6>, <Config 7>, <Config 8>]
+PROOF 2021-12-07 15:20:28,479  root  INFO: verify : Start
+PROOF 2021-12-07 15:20:28,479  root  DEBUG: verify_image : start
+PROOF 2021-12-07 15:20:28,561  root  INFO: faces:()
+PROOF 2021-12-07 15:20:28,561  root  ERROR: verify_image : exception : tuple index out of range
+PROOF 2021-12-07 15:20:28,561  root  DEBUG: verify_image : end
+PROOF 2021-12-07 15:20:28,562  root  ERROR: verify : exception : list index out of range
 Traceback (most recent call last):
-  File "C:\Users\Indium Software\Documents\develop\document_proof\proof.py", line 36, in user_proof
-    image = request.files['image']
-  File "C:\Users\Indium Software\Documents\develop\document_proof\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
-    raise exceptions.BadRequestKeyError(key)
-werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
-PROOF 2021-12-03 12:39:54,349  root  DEBUG: user_proof : end
-PROOF 2021-12-03 13:06:19,902  root  INFO: user_proof : Start
-PROOF 2021-12-03 13:06:19,903  root  ERROR: user_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
-Traceback (most recent call last):
-  File "C:\Users\Indium Software\Documents\develop\document_proof\proof.py", line 36, in user_proof
-    image = request.files['image']
-  File "C:\Users\Indium Software\Documents\develop\document_proof\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
-    raise exceptions.BadRequestKeyError(key)
-werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
-PROOF 2021-12-03 13:06:19,906  root  DEBUG: user_proof : end
-PROOF 2021-12-03 13:10:00,095  root  INFO: user_proof : Start
-PROOF 2021-12-03 13:10:00,096  root  ERROR: user_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
-Traceback (most recent call last):
-  File "C:\Users\Indium Software\Documents\develop\document_proof\proof.py", line 36, in user_proof
-    image = request.files['image']
-  File "C:\Users\Indium Software\Documents\develop\document_proof\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
-    raise exceptions.BadRequestKeyError(key)
-werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
-PROOF 2021-12-03 13:10:00,106  root  DEBUG: user_proof : end
+  File "C:\Users\Indium Software\Documents\develop\document_proof\proof.py", line 94, in verify
+    breath = verified_image[0]
+IndexError: list index out of range
+PROOF 2021-12-07 15:20:28,568  root  DEBUG: verify : end
+PROOF 2021-12-07 15:20:28,570  root  DEBUG: user_proof : end
+PROOF 2021-12-07 15:20:28,572  werkzeug  INFO: 127.0.0.1 - - [07/Dec/2021 15:20:28] "POST /user-proof/PAN HTTP/1.1" 200 -
+PROOF 2021-12-07 15:25:32,453  root  INFO: user_proof : Start
+PROOF 2021-12-07 15:25:32,456  root  INFO: True
+PROOF 2021-12-07 15:25:32,481  root  INFO: config_obj:[<Config 9>, <Config 10>, <Config 11>, <Config 12>]
+PROOF 2021-12-07 15:25:32,481  root  INFO: verify : Start
+PROOF 2021-12-07 15:25:32,482  root  DEBUG: verify_image : start
+PROOF 2021-12-07 15:25:32,611  root  INFO: faces:[[ 84 253 167 167]]
+PROOF 2021-12-07 15:25:32,612  root  INFO: cor1:(253, 84)
+PROOF 2021-12-07 15:25:32,612  root  INFO: cor2:(167, 84)
+PROOF 2021-12-07 15:25:32,612  root  INFO: cor3:(253, 167)
+PROOF 2021-12-07 15:25:32,612  root  INFO: cor4:(167, 167)
+PROOF 2021-12-07 15:25:32,613  root  INFO: breath:86
+PROOF 2021-12-07 15:25:32,613  root  INFO: length:-83
+PROOF 2021-12-07 15:25:34,747  root  DEBUG: user_proof : end
+PROOF 2021-12-07 15:25:34,748  werkzeug  INFO: 127.0.0.1 - - [07/Dec/2021 15:25:34] "POST /user-proof/AADHAR HTTP/1.1" 200 -
+PROOF 2021-12-07 15:28:25,108  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:28:25,581  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:28:36,384  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:28:36,410  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:28:36,768  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:28:36,768  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:29:20,039  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:29:20,375  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:29:25,026  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:29:25,078  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:29:25,685  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:29:25,685  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:30:23,164  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:30:23,616  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:30:33,005  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:30:33,046  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:30:33,783  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:30:33,784  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:35:02,468  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:35:02,680  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:35:05,851  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:35:05,865  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:35:06,249  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:35:06,249  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:35:07,668  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:35:07,960  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:35:12,624  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:35:12,640  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:35:13,155  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:35:13,156  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:37:04,682  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:37:04,879  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:37:08,739  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:37:08,773  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:37:09,647  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:37:09,648  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:37:15,367  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:37:15,699  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:37:19,301  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:37:19,319  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:37:19,655  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:37:19,655  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:37:25,079  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:37:25,334  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:37:28,199  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:37:28,213  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:37:28,496  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:37:28,496  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:38:43,233  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:38:43,427  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:38:46,676  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:38:46,688  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:38:46,964  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:38:46,965  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:38:47,216  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:38:47,420  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:38:50,348  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:38:50,374  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:38:50,665  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:38:50,665  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:39:24,249  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:39:24,447  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:39:27,289  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:39:27,306  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:39:27,576  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:39:27,577  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:39:35,402  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:39:35,598  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:39:39,095  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:39:39,114  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:39:39,432  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:39:39,432  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:40:05,631  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:40:05,839  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:40:08,848  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:40:08,864  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:40:09,217  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:40:09,217  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:46:16,040  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:46:16,224  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:46:19,752  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:46:19,776  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:46:20,235  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:46:20,236  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 15:59:34,624  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 15:59:34,848  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 15:59:37,854  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 15:59:37,874  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 15:59:38,189  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 15:59:38,189  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:00:00,041  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:00:00,260  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:00:03,336  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:00:03,348  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:00:03,596  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:00:03,596  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:00:06,366  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:00:06,553  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:00:09,129  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:00:09,143  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:00:09,435  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:00:09,435  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:00:15,925  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:00:16,118  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:00:18,696  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:00:18,710  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:00:19,020  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:00:19,021  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:00:52,777  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:00:53,030  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:00:56,416  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:00:56,430  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:00:56,738  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:00:56,739  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:00:58,250  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:00:58,467  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:01:02,128  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:01:02,144  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:01:02,501  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:01:02,502  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:01:27,042  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:01:27,288  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:01:30,330  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:01:30,345  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:01:30,667  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:01:30,667  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:01:30,903  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:01:31,187  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:01:34,406  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:01:34,423  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:01:34,739  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:01:34,739  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:02:25,366  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:02:25,564  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:02:28,543  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:02:28,558  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:02:28,877  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:02:28,877  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:02:29,091  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:02:29,375  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:02:33,818  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:02:33,838  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:02:34,144  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:02:34,145  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:03:19,880  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:03:20,298  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:03:41,478  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:03:41,507  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:03:41,869  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:03:41,870  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:03:43,416  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:03:43,664  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:03:47,463  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:03:47,479  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:03:48,493  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:03:48,494  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:03:54,207  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:03:54,476  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:03:59,022  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:03:59,041  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:03:59,783  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:03:59,783  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:00,105  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:00,641  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:04:04,948  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:04:04,965  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:04:05,407  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:04:05,408  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:05,618  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:05,826  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:04:09,126  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:04:09,144  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:04:09,568  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:04:09,569  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:09,836  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:10,056  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:04:13,380  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:04:13,397  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:04:13,728  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:04:13,729  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:14,038  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:14,296  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:04:17,848  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:04:17,864  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:04:18,201  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:04:18,201  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:18,368  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:18,593  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-07 16:04:21,870  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-07 16:04:21,890  werkzeug  INFO:  * Debugger PIN: 481-033-746
+PROOF 2021-12-07 16:04:22,214  werkzeug  WARNING:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+PROOF 2021-12-07 16:04:22,214  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-07 16:04:22,471  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
+PROOF 2021-12-07 16:04:22,686  werkzeug  INFO:  * Restarting with stat
