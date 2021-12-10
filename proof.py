@@ -133,14 +133,10 @@ def verify(config_obj,image):
             distance_value = []
             ratio_value = []
             
-            print("dict_params",dict_params)
-            
             length_dict_params =len(dict_params) 
             if length_dict_params>1:
                 params_key = list(dict_params.keys())
-                print("params_key",params_key)
                 params_value = list(dict_params.values())
-                print("params_value",params_value)
                 for i in range(0,length_dict_params,2):
                     x1 = params_value[i][0]
                     y1 = params_value[i][1]
@@ -324,6 +320,66 @@ def value():
     logging.debug("value : end")
     return jsonify(resp_dict)
 
+@app.route("/add-config", methods=["POST"])
+def add_config():
+    """Add Config"""
+    logging.debug("add_config : start")
+    resp_dict = {"status":False, "msg":"", "object":None}
+    try:
+        id_type = request.json.get("id_type")
+        id_version = request.json.get("id_version")
+        dict_params = request.json.get("dict_params")
+        breath = request.json.get("breath")
+        length = request.json.get("length")
+        
+        # Find distance and ratio        
+        distance_value = []
+        ratio_value = []
+        
+        print("dict_params",dict_params)    
+        
+        length_dict_params =len(dict_params) 
+        if length_dict_params>1:
+            params_key = list(dict_params.keys())
+            params_value = list(dict_params.values())
+            for i in range(0,length_dict_params,2):
+                x1 = params_value[i][0]
+                y1 = params_value[i][1]
+                x2 = params_value[i+1][0]
+                y2 = params_value[i+1][1]
+                r1 = params_value[i][2]
+                r2 = params_value[i][3]
+                r3 = params_value[i+1][2]
+                r4 = params_value[i+1][3]
+                dist = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+                ratio_1 = r1/r2
+                ratio_2 = r3/r4
+                dist = round(dist,4)  
+                    
+                distance_value.append({'key': params_key[i], 'value':dist })
+                distance_value.append({'key': params_key[i+1], 'value':dist })
+                
+                ratio_value.append({'key': params_key[i], 'value':round(ratio_1,4)})
+                ratio_value.append({'key': params_key[i+1], 'value':round(ratio_2,4)})
+                
+            print("distance_value",distance_value)
+            print("ratio_value",ratio_value)
+                
+            for i in range(len(distance_value)):
+                for j in range(len(ratio_value)):
+                    if i == j:
+                        config = Config(id_type,id_version,distance_value[i]['key'],distance_value[i]['value'],ratio_value[j]['value'],breath,length) 
+                        db.session.add(config)
+                        db.session.commit()
+        
+        resp_dict["msg"] = "Config Added Successfully"
+        resp_dict ["status"] = True
+    except Exception as e:
+        logging.error("add_config : exception : {}".format(e))
+        resp_dict["msg"] = "Internal Server Error"
+    logging.debug("add_config : end")
+    return jsonify(resp_dict)
+
 @app.route("/document-types", methods=["POST"])
 def document_types():
     """Document Types"""
@@ -342,4 +398,3 @@ def document_types():
 
 if __name__ == "__main__":
     app.run(debug=True,host="0.0.0.0",port=5001)
-
