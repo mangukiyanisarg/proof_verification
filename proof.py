@@ -34,7 +34,7 @@ def id_proof():
     Return the Score of Matching Text and Image Co-ordinates
     
     """
-    logging.info("user_proof : Start")
+    logging.info("id_proof : Start")
     resp_dict={"object":None}
     try:
         user_seq_no = 1
@@ -62,8 +62,8 @@ def id_proof():
                     # print("Id Type Required")
                     resp_dict["object"] = "Id Type Required"
                     
-                proof_dict={"score":verified}
-                resp_dict["object"] = proof_dict
+                #proof_dict={"score":verified}
+                resp_dict["object"] = verified
             else:
                 resp_dict["object"] = "Image Required"
                     
@@ -71,14 +71,13 @@ def id_proof():
             resp_dict["msg"] = "Session Expired"
  
     except Exception as e:
-        logging.exception("user_proof : exception : {}".format(e))
-        resp_dict["msg"] = "Internal Server Error"
-        
+        logging.exception("id_proof : exception : {}".format(e))
+        resp_dict["msg"] = "Internal Server Error"  
     finally:
         os.remove(IMAGE_PATH+"/"+image_file_name)
         
     resp = jsonify(resp_dict)
-    logging.debug("user_proof : end")
+    logging.debug("id_proof : end")
     return resp
 
 def verify(config_obj,image):
@@ -107,7 +106,9 @@ def verify(config_obj,image):
         version_all = db.session.query(Config.id_version).filter(Config.id_type==id_type).distinct(Config.id_version).all()
         # print(f"version_all:{version_all}")
         
+        total_list = []
         update_mean_dict ={}
+        result_list = []
         for version in version_all:
             id_version = version[0]
             dict_params ={}
@@ -133,10 +134,14 @@ def verify(config_obj,image):
             distance_value = []
             ratio_value = []
             
+            print("dict_params",dict_params)
+            
             length_dict_params =len(dict_params) 
             if length_dict_params>1:
                 params_key = list(dict_params.keys())
+                print("params_key",params_key)
                 params_value = list(dict_params.values())
+                print("params_value",params_value)
                 for i in range(0,length_dict_params,2):
                     x1 = params_value[i][0]
                     y1 = params_value[i][1]
@@ -171,13 +176,25 @@ def verify(config_obj,image):
                     result_dist.append({'id': version_numbers[i].id_version, 'type': 'ratio', 'key': version_numbers[i].params, 'value':0})
                 
                 if version_numbers[i].image_breath == breath and version_numbers[i].image_length == length :
-                    result_dist.append({'id': version_numbers[i].id_version, 'type': 'image_breath_length', 'key': version_numbers[i].image_breath, 'value':100, 'key1': version_numbers[i].image_length, 'value1':100})
+                    result_dist.append({'id': version_numbers[i].id_version, 'type': 'image', 'key': version_numbers[i].image_key, 'value':100, 'key1': version_numbers[i].image_key, 'value1':100})
                 else:
-                    result_dist.append({'id': version_numbers[i].id_version, 'type': 'image_breath_length', 'key': version_numbers[i].image_breath, 'value':0,'key1': version_numbers[i].image_length, 'value1':100})
+                    result_dist.append({'id': version_numbers[i].id_version, 'type': 'image', 'key': version_numbers[i].image_key, 'value':0,'key1': version_numbers[i].image_key, 'value1':100})
                     
             # print(f"result_dist:{result_dist}")
             result_df = pd.DataFrame(result_dist)
-            # print(f"result_df:{result_df}")
+            print(f"result_df:{result_df}")
+            
+            df = result_df.loc[:,["type","key","value"]]
+            key_values = dict(zip(zip((df['type'] + df['key'])), (df["value"])))
+            dict_copy = {key[0]: value for key, value in key_values.items()}
+            
+            copy = list(dict_copy.values())
+            total = sum(copy)/len(copy)
+            print("total",total)
+            
+            dict_copy['total'] = round(total)
+            print("dict_copy",dict_copy)
+            result_list.append(dict_copy)
             
             grouped = result_df.groupby(['id'])
             mean = grouped['value'].agg(np.mean)
@@ -185,11 +202,22 @@ def verify(config_obj,image):
             mean_dict = mean.to_dict()
             update_mean_dict.update(mean_dict)
             
-        # print(f"update_mean_dict:{update_mean_dict}")
         result_score_dict= list(update_mean_dict.values())
-        result = max(result_score_dict)
-        # print(f"result:{result}")
-        return result
+        result = max(result_score_dict) 
+        
+        for i in result_list:
+            total_list.append(i['total']) 
+        
+        total_max = max(total_list)
+        print("total_max",total_max)
+        
+        key_dict ={}
+        for j in result_list:
+            if total_max == j['total']:
+                key_dict = j
+        
+        proof_dict={"score":result, "key_score":key_dict}
+        return proof_dict
         
     except Exception as e:
         logging.exception("verify : exception : {}".format(e))
@@ -242,37 +270,77 @@ def verify_image(img):
     logging.debug("verify_image : end")
     return []
 
-@app.route("/add-config", methods=["POST"])
-def add_config():
-    """Add Config"""
-    logging.debug("add_config : start")
+@app.route("/value", methods=["POST"])
+def value():
+    logging.debug("value : start")
     resp_dict = {"status":False, "msg":"", "object":None}
     try:
-        id_type = request.json.get("id_type")
-        id_version = request.json.get("id_version")
-        config_id = request.json.get("config_id")
-        params = request.json.get("params")
-        params_dist =  request.json.get("params_dist")
-        params_ratio = request.json.get("params_ratio")
-        image_breath = request.json.get("image_breath")
-        image_length = request.json.get("image_length")
+        image = request.files['image']
         
-        check_params = Config.query.filter(and_(Config.params == params, Config.id_version == id_version)).first()
-        if check_params:
-                resp_dict["msg"] = "Params Already Added"
-                return jsonify(resp_dict)
-        else:
-            config = Config(id_type, id_version, config_id, '',params, params_dist, params_ratio,image_breath,image_length)
-            db.session.add(config)
-            db.session.commit()
+        if image:
+            str_time =  datetime.datetime.now().strftime('%d%m%Y%H%M%S')
+            image_file_name = str_time+".jpg"
             
-        resp_dict["msg"] = "Config Added Successfully"
+            logging.info(os.path.isdir(IMAGE_PATH))
+            if os.path.isdir(IMAGE_PATH)==False:
+                os.mkdir(IMAGE_PATH)
+                
+            # image save
+            image.save(os.path.join(IMAGE_PATH,image_file_name))
+            
+        img = cv2.imread(IMAGE_PATH+"/"+image_file_name)
+        d = pytesseract.image_to_data(img, output_type=Output.DICT)
+        n_boxes = len(d['level'])
+        logging.info(d['text'])
+        
+        response_dict = {}
+        
+        for i in range(n_boxes):
+            value_dict = {}
+            value_dict['left'] = d['left'][i]
+            value_dict['top'] = d['top'][i]
+            value_dict['width'] = d['width'][i]
+            value_dict['height'] = d['height'][i]
+            
+            response_dict[d['text'][i]] = value_dict
+            
+        image = verify_image(img)
+        lst = ["breath", int(image[0]),"length",int(image[1])]
+        
+        def Convert(lst):
+            res_dct = {lst[i]: lst[i + 1] for i in range(0, len(lst), 2)}
+            return res_dct
+        
+        length_breath = Convert(lst)
+        
+        result_dict={"text":response_dict, 'image':length_breath}
+        resp_dict["object"] = result_dict
+        resp_dict ["status"] = True
+        
+    except Exception as e:
+        logging.error("value : exception : {}".format(e))
+        resp_dict["msg"] = "Internal Server Error"
+    finally:
+        os.remove(IMAGE_PATH+"/"+image_file_name)
+    logging.debug("value : end")
+    return jsonify(resp_dict)
+
+@app.route("/document-types", methods=["POST"])
+def document_types():
+    """Document Types"""
+    logging.debug("document_types : start")
+    resp_dict = {"status":False, "object":None}
+    try:
+        types = db.session.query(Config.id_type).distinct().all()
+        config_types = [i[0] for i in types]
+        resp_dict["object"] = config_types
         resp_dict ["status"] = True
     except Exception as e:
-        logging.error("add_config : exception : {}".format(e))
+        logging.error("document_types : exception : {}".format(e))
         resp_dict["msg"] = "Internal Server Error"
-    logging.debug("add_config : end")
+    logging.debug("document_types : end")
     return jsonify(resp_dict)
 
 if __name__ == "__main__":
     app.run(debug=True,host="0.0.0.0",port=5001)
+

@@ -53,11 +53,12 @@ class Config(db.Model):
     params_ratio = db.Column(db.Float, nullable=False, default=0.0)
     image_breath = db.Column(db.Float, nullable=False, default=0.0)
     image_length = db.Column(db.Float, nullable=False, default=0.0)
+    image_key = db.Column(db.String(1000), nullable=False)
     status = db.Column(db.String(1), nullable=False, default=STATUS["ACTIVE"])
     created_date = db.Column(db.DateTime, nullable=True)
     updated_date = db.Column(db.DateTime, nullable=True)
 
-    def __init__(self,id_type,id_version,config_id,params_type,params,params_dist,params_ratio,image_breath,image_length):
+    def __init__(self,id_type,id_version,config_id,params_type,params,params_dist,params_ratio,image_breath,image_length,image_key):
         self.id_type = id_type
         self.id_version = id_version
         self.config_id = config_id
@@ -67,4 +68,5 @@ class Config(db.Model):
         self.params_ratio = params_ratio
         self.image_breath = image_breath
         self.image_length = image_length
+        self.image_key = image_key
         self.created_date = datetime.datetime.now()

@@ -37,13 +37,16 @@ CREATE TABLE tb_config(
     params_dist NUMERIC(10,4) NOT NULL DEFAULT 0.00,
     params_ratio NUMERIC(10,4) NOT NULL DEFAULT 0.00,
     image_breath NUMERIC(10,4) NOT NULL DEFAULT 0.00,
-    image_length NUMERIC(10,4) NOT NULL DEFAULT 0.00, -- 0.4378 b/l 300
+    image_length NUMERIC(10,4) NOT NULL DEFAULT 0.00,
+    image_key VARCHAR(1000) DEFAULT 'Length_Breath',
     status CHAR(1) DEFAULT 'A',
     created_by INTEGER DEFAULT 0,
     created_date TIMESTAMP DEFAULT NULL,
     updated_by INTEGER DEFAULT 0,
     updated_date TIMESTAMP DEFAULT NULL
 );
+
+
 
 
 --- PAN id-version :1
@@ -126,3 +129,5 @@ VALUES('DRIVING',2, 2,'Group',1371.6209,2.7857,231,1320);
 
 INSERT INTO tb_config (id_type,id_version,config_id,params,params_dist,params_ratio,image_breath,image_length) 
 VALUES('DRIVING',2, 2,'Father''s',1371.6209,4.5909,231,1320);
+
+
