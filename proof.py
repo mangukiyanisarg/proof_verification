@@ -1,6 +1,5 @@
 from app import app ,logging, STATUS,db
 from model import *
-from utils import *
 from flask import jsonify, request, sessions
 from sqlalchemy.sql.expression import distinct
 
