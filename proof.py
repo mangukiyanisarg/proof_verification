@@ -327,7 +327,6 @@ def add_config():
     resp_dict = {"status":False, "msg":"", "object":None}
     try:
         id_type = request.json.get("id_type")
-        id_version = request.json.get("id_version")
         dict_params = request.json.get("dict_params")
         breath = request.json.get("breath")
         length = request.json.get("length")
@@ -361,10 +360,15 @@ def add_config():
                 
                 ratio_value.append({'key': params_key[i], 'value':round(ratio_1,4)})
                 ratio_value.append({'key': params_key[i+1], 'value':round(ratio_2,4)})
-                
-            print("distance_value",distance_value)
-            print("ratio_value",ratio_value)
-                
+            
+            version_all = db.session.query(Config.id_version).filter(Config.id_type==id_type).distinct(Config.id_version).all()
+            version_types = [i[0] for i in version_all]
+            
+            if version_types:
+                id_version = max(version_types) + 1
+            else:
+                id_version = 1
+            
             for i in range(len(distance_value)):
                 for j in range(len(ratio_value)):
                     if i == j:

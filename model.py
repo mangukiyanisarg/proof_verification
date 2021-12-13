@@ -1,7 +1,5 @@
 import datetime
-import json, requests
 from sqlalchemy import and_
-
 from app import app,  db, STATUS
 
 class Config(db.Model):

@@ -1,7 +1,7 @@
 CREATE TABLE tb_config(
     config_id SERIAL PRIMARY KEY,
     id_type VARCHAR(70) DEFAULT NULL,
-    id_version INTEGER DEFAULT 1,
+    id_version INTEGER DEFAULT 0,
     params VARCHAR(5000) DEFAULT NULL,
     params_dist NUMERIC(10,4) NOT NULL DEFAULT 0.00,
     params_ratio NUMERIC(10,4) NOT NULL DEFAULT 0.00,
@@ -14,7 +14,6 @@ CREATE TABLE tb_config(
     updated_by INTEGER DEFAULT 0,
     updated_date TIMESTAMP DEFAULT NULL
 );
-
 
 --- No use this All-----
 
