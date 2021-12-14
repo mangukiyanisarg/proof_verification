@@ -34,7 +34,7 @@ def id_proof():
     
     """
     logging.info("id_proof : Start")
-    resp_dict={"object":None}
+    resp_dict={"object":None,"status":False}
     try:
         user_seq_no = 1
         if user_seq_no > 0:
@@ -52,17 +52,20 @@ def id_proof():
                 image.save(os.path.join(IMAGE_PATH,image_file_name))
                 image_read = cv2.imread(IMAGE_PATH+"/"+image_file_name)
                 
+                type_id = input_json["id_type"]
+                
                 config_obj =  Config.query.filter(Config.id_type ==input_json["id_type"]).all()
                 logging.info(f"config_obj:{config_obj}")
                 
                 if input_json["id_type"]:
-                    verified = verify(config_obj,image_read)
+                    verified = verify(config_obj,image_read,type_id)
                 else:
                     # print("Id Type Required")
                     resp_dict["object"] = "Id Type Required"
                     
                 #proof_dict={"score":verified}
                 resp_dict["object"] = verified
+                resp_dict["status"] = True
             else:
                 resp_dict["object"] = "Image Required"
                     
@@ -79,7 +82,7 @@ def id_proof():
     logging.debug("id_proof : end")
     return resp
 
-def verify(config_obj,image):
+def verify(config_obj,image,type_id):
     """
     Verify Text Method 
     To Find Co-Ordinates of Text Location 
@@ -211,7 +214,7 @@ def verify(config_obj,image):
             if total_max == j['total']:
                 key_dict = j
         
-        proof_dict={"score":result, "key_score":key_dict}
+        proof_dict={"score":result, "key_score":key_dict,"id_type":type_id}
         return proof_dict
         
     except Exception as e:
