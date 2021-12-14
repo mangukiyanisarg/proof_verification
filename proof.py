@@ -274,6 +274,9 @@ def value():
     resp_dict = {"status":False, "msg":"", "object":None}
     try:
         image = request.files['image']
+        input_json = json.load(request.files['data'])
+        
+        type_id = input_json["id_type"]
         
         if image:
             str_time =  datetime.datetime.now().strftime('%d%m%Y%H%M%S')
@@ -311,7 +314,7 @@ def value():
         
         length_breath = Convert(lst)
         
-        result_dict={"text":response_dict, 'image':length_breath}
+        result_dict={"text":response_dict, "image":length_breath,"id_type":type_id}
         resp_dict["object"] = result_dict
         resp_dict ["status"] = True
         
