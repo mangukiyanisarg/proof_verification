@@ -1,154 +1,218 @@
-PROOF 2021-12-13 13:31:54,534  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:31:54,645  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:01,472  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:01,496  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:01,894  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 16:20:15,546  root  INFO: id_proof : Start
+PROOF 2021-12-15 16:20:15,659  root  INFO: input_json
+PROOF 2021-12-15 16:20:15,660  root  INFO: True
+PROOF 2021-12-15 16:20:15,919  root  INFO: config_obj:[<Config 1>, <Config 2>, <Config 3>, <Config 4>]
+PROOF 2021-12-15 16:20:15,919  root  INFO: verify : Start
+PROOF 2021-12-15 16:20:15,919  root  DEBUG: verify_image : start
+PROOF 2021-12-15 16:20:16,225  root  INFO: faces:[[797 404  98  98]]
+PROOF 2021-12-15 16:20:16,225  root  INFO: cor1:(404, 797)
+PROOF 2021-12-15 16:20:16,225  root  INFO: cor2:(98, 797)
+PROOF 2021-12-15 16:20:16,225  root  INFO: cor3:(404, 98)
+PROOF 2021-12-15 16:20:16,225  root  INFO: cor4:(98, 98)
+PROOF 2021-12-15 16:20:16,226  root  INFO: breath:306
+PROOF 2021-12-15 16:20:16,227  root  INFO: length:699
+PROOF 2021-12-15 16:20:17,958  root  DEBUG: id_proof : end
+PROOF 2021-12-15 16:20:17,962  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:20:17] "POST /id-proof HTTP/1.1" 200 -
+PROOF 2021-12-15 16:20:59,429  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 16:20:59,587  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 16:21:03,896  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 16:21:03,907  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 16:21:04,482  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:01,894  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:32:21,094  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:32:21,202  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:23,603  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:23,622  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:23,982  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 16:21:04,482  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 16:21:15,178  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 16:21:15,334  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 16:21:20,079  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 16:21:20,089  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 16:21:20,717  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:23,983  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:32:25,545  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:32:25,654  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:28,220  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:28,239  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:28,562  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 16:21:20,717  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 16:21:29,951  root  INFO: id_proof : Start
+PROOF 2021-12-15 16:21:29,974  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 16:21:29,975  root  INFO: {'id_type': 'PAN'}
+PROOF 2021-12-15 16:21:29,976  root  INFO: True
+PROOF 2021-12-15 16:21:30,247  root  INFO: config_obj:[<Config 1>, <Config 2>, <Config 3>, <Config 4>]
+PROOF 2021-12-15 16:21:30,247  root  INFO: verify : Start
+PROOF 2021-12-15 16:21:30,247  root  DEBUG: verify_image : start
+PROOF 2021-12-15 16:21:30,595  root  INFO: faces:[[797 404  98  98]]
+PROOF 2021-12-15 16:21:30,596  root  INFO: cor1:(404, 797)
+PROOF 2021-12-15 16:21:30,596  root  INFO: cor2:(98, 797)
+PROOF 2021-12-15 16:21:30,596  root  INFO: cor3:(404, 98)
+PROOF 2021-12-15 16:21:30,596  root  INFO: cor4:(98, 98)
+PROOF 2021-12-15 16:21:30,597  root  INFO: breath:306
+PROOF 2021-12-15 16:21:30,597  root  INFO: length:699
+PROOF 2021-12-15 16:21:32,133  root  DEBUG: id_proof : end
+PROOF 2021-12-15 16:21:32,138  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:21:32] "POST /id-proof HTTP/1.1" 200 -
+PROOF 2021-12-15 16:22:19,660  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:22:19,665  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:22:19,666  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:22:19] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 16:22:34,471  root  INFO: id_proof : Start
+PROOF 2021-12-15 16:22:34,480  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 16:22:34,480  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['data'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 16:22:34,561  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:22:34] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 16:24:02,900  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:24:02,904  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:24:02,905  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:24:02] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 16:24:06,163  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:24:06,165  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:24:06,168  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:24:06] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 16:24:16,935  root  INFO: id_proof : Start
+PROOF 2021-12-15 16:24:16,954  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 16:24:16,954  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['data'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 16:24:17,022  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:24:17] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 16:29:15,989  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:29:15,992  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:29:15,993  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:29:15] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 16:29:16,125  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:29:16,127  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:29:16,129  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:29:16] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 16:39:15,817  root  DEBUG: document_types : start
+PROOF 2021-12-15 16:39:15,821  root  DEBUG: document_types : end
+PROOF 2021-12-15 16:39:15,822  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 16:39:15] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:12:52,265  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:12:52,271  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:12:52,273  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:12:52] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:13:06,846  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:13:06,848  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:13:06,850  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:13:06] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:13:21,346  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:13:21,356  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:13:21,356  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['data'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:13:21,405  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:13:21] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 17:16:59,239  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:16:59,439  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:17:03,982  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:17:03,993  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:17:04,534  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:28,563  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:32:38,184  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:32:38,295  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:40,847  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:40,868  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:41,231  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:17:04,534  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:17:24,195  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:17:24,334  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:17:27,910  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:17:27,920  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:17:28,488  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:41,231  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:32:44,018  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:32:44,120  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:46,493  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:46,515  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:46,866  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:17:28,488  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:19:08,651  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:19:08,799  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:19:12,448  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:19:12,464  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:19:13,162  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:46,866  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:32:48,423  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:32:48,537  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:32:50,821  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:32:50,839  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:32:51,162  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:19:13,163  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:19:49,416  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:19:49,600  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:19:54,226  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:19:54,236  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:19:54,792  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:32:51,163  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:33:53,582  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:33:53,704  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:33:55,997  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:33:56,016  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:33:56,341  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:19:54,793  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:20:02,975  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:20:03,403  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:20:03,405  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:20:03] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:20:39,176  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:20:39,206  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:20:39,207  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['id_type'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:20:39,309  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:20:39] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 17:21:40,607  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:21:44,009  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:21:44,020  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:21:44,750  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:33:56,341  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:34:10,199  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:34:10,324  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:34:12,681  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:34:12,700  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:34:13,027  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:21:44,751  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:22:04,392  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:22:04,417  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:22:04,417  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['id_type'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:22:04,465  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:22:04] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 17:22:26,282  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:22:26,568  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:22:30,611  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:22:30,624  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:22:31,292  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:34:13,027  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:34:14,534  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:34:14,639  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:34:16,864  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:34:16,883  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:34:17,198  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:22:31,293  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:22:31,471  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:22:31,492  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:22:31,493  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['id_type'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:22:31,549  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:22:31] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -
+PROOF 2021-12-15 17:25:13,968  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:25:14,458  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:25:14,461  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:25:14] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:25:16,706  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:25:16,708  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:25:16,710  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:25:16] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:25:25,272  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:26:40,091  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:26:41,850  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:27:39,699  werkzeug  INFO:  * Detected change in 'D:\\proof-verification\\proof.py', reloading
+PROOF 2021-12-15 17:28:15,900  root  DEBUG: document_types : start
+PROOF 2021-12-15 17:28:15,906  root  DEBUG: document_types : end
+PROOF 2021-12-15 17:28:15,908  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:28:15] "POST /document-types HTTP/1.1" 200 -
+PROOF 2021-12-15 17:28:25,711  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:29:01,831  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:29:01,832  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['id_type'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:29:01,834  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:29:01,990  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:29:05,677  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:29:05,687  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:29:06,385  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:34:17,199  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:34:41,298  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:34:41,406  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:34:43,646  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:34:43,664  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:34:44,059  werkzeug  WARNING:  * Running on all addresses.
+PROOF 2021-12-15 17:29:06,385  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:29:33,214  werkzeug  INFO:  * Restarting with stat
+PROOF 2021-12-15 17:29:36,829  werkzeug  WARNING:  * Debugger is active!
+PROOF 2021-12-15 17:29:36,839  werkzeug  INFO:  * Debugger PIN: 255-628-041
+PROOF 2021-12-15 17:29:37,689  werkzeug  WARNING:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:34:44,059  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:34:48,487  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:34:48,598  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:34:50,927  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:34:50,947  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:34:51,285  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:34:51,285  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:34:56,851  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:34:56,978  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:00,680  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:00,699  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:01,081  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:01,082  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:18,413  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:18,525  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:20,872  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:20,898  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:21,245  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:21,245  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:21,532  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:21,637  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:23,952  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:23,972  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:24,316  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:24,317  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:25,899  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:26,007  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:28,260  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:28,278  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:28,616  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:28,617  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:28,881  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:28,989  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:31,283  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:31,305  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:31,648  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:31,648  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:31,790  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:31,897  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:34,211  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:34,234  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:34,603  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:34,603  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:35:34,882  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:35:34,990  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:35:37,307  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:35:37,327  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:35:37,672  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:35:37,673  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:36:02,172  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:36:02,274  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:36:04,581  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:36:04,599  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:36:04,951  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:36:04,951  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:36:05,135  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:36:05,249  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:36:07,601  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:36:07,620  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:36:07,959  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:36:07,960  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:36:10,828  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:36:10,945  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:36:13,144  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:36:13,162  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:36:13,491  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:36:13,491  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
-PROOF 2021-12-13 13:36:29,673  werkzeug  INFO:  * Detected change in 'C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\proof.py', reloading
-PROOF 2021-12-13 13:36:29,839  werkzeug  INFO:  * Restarting with stat
-PROOF 2021-12-13 13:36:32,772  werkzeug  WARNING:  * Debugger is active!
-PROOF 2021-12-13 13:36:32,790  werkzeug  INFO:  * Debugger PIN: 481-033-746
-PROOF 2021-12-13 13:36:33,142  werkzeug  WARNING:  * Running on all addresses.
-   WARNING: This is a development server. Do not use it in a production deployment.
-PROOF 2021-12-13 13:36:33,143  werkzeug  INFO:  * Running on http://192.168.43.149:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:29:37,690  werkzeug  INFO:  * Running on http://192.168.29.156:5001/ (Press CTRL+C to quit)
+PROOF 2021-12-15 17:29:42,113  root  INFO: id_proof : Start
+PROOF 2021-12-15 17:29:42,132  root  INFO: <FileStorage: 'imgpsh_fullsize_anim.png' ('image/png')>
+PROOF 2021-12-15 17:29:42,132  root  ERROR: id_proof : exception : 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "D:\proof-verification\proof.py", line 48, in id_proof
+    input_json = json.load(request.files['id_type'])
+  File "C:\Users\Indium Software\.virtualenvs\proof-verification-GrL6_WcY\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+PROOF 2021-12-15 17:29:42,182  werkzeug  INFO: 127.0.0.1 - - [15/Dec/2021 17:29:42] "[35m[1mPOST /id-proof HTTP/1.1[0m" 500 -

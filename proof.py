@@ -11,14 +11,14 @@ import pytesseract
 import math
 import numpy as np
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Users\\Indium Software\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 from pytesseract import Output
 
 import datetime
 import pandas as pd
 
-IMAGE_PATH = "C:\\Users\\Indium Software\\Documents\\develop\\document_proof\\images"
+IMAGE_PATH = "D:\\proof-verification\\images"
 
 @app.route("/")
 def home():
@@ -34,12 +34,21 @@ def id_proof():
     
     """
     logging.info("id_proof : Start")
-    resp_dict={"object":None}
+    resp_dict={"object":None,"status":False}
+    print(request.form,"***")
+    print(len(request.files))
+    #print(request.files['image'])
+    # print(request.file['data'])
+
     try:
         user_seq_no = 1
         if user_seq_no > 0:
             image = request.files['image']
-            input_json = json.load(request.files['data'])
+            logging.info(image)
+            input_json = json.load(request.files['id_type'])
+            print("Input_Json",input_json)
+
+            logging.info(input_json)
             if image:
                 str_time =  datetime.datetime.now().strftime('%d%m%Y%H%M%S')
                 image_file_name = str_time+".jpg"
@@ -51,18 +60,21 @@ def id_proof():
                 # image save
                 image.save(os.path.join(IMAGE_PATH,image_file_name))
                 image_read = cv2.imread(IMAGE_PATH+"/"+image_file_name)
+
+                type_id = input_json["id_type"]
                 
                 config_obj =  Config.query.filter(Config.id_type ==input_json["id_type"]).all()
                 logging.info(f"config_obj:{config_obj}")
                 
                 if input_json["id_type"]:
-                    verified = verify(config_obj,image_read)
+                    verified = verify(config_obj,image_read,type_id)
                 else:
                     # print("Id Type Required")
                     resp_dict["object"] = "Id Type Required"
                     
                 #proof_dict={"score":verified}
                 resp_dict["object"] = verified
+                resp_dict["status"] = True
             else:
                 resp_dict["object"] = "Image Required"
                     
@@ -79,7 +91,7 @@ def id_proof():
     logging.debug("id_proof : end")
     return resp
 
-def verify(config_obj,image):
+def verify(config_obj,image, type_id):
     """
     Verify Text Method 
     To Find Co-Ordinates of Text Location 
@@ -211,7 +223,7 @@ def verify(config_obj,image):
             if total_max == j['total']:
                 key_dict = j
         
-        proof_dict={"score":result, "key_score":key_dict}
+        proof_dict={"score":result, "key_score":key_dict,"id_type":type_id}
         return proof_dict
         
     except Exception as e:
@@ -271,6 +283,9 @@ def value():
     resp_dict = {"status":False, "msg":"", "object":None}
     try:
         image = request.files['image']
+        input_json = json.load(request.files['data'])
+
+        type_id = input_json["id_type"]
         
         if image:
             str_time =  datetime.datetime.now().strftime('%d%m%Y%H%M%S')
@@ -308,7 +323,7 @@ def value():
         
         length_breath = Convert(lst)
         
-        result_dict={"text":response_dict, 'image':length_breath}
+        result_dict={"text":response_dict, "image":length_breath,"id_type":type_id}
         resp_dict["object"] = result_dict
         resp_dict ["status"] = True
         
