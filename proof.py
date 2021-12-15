@@ -63,6 +63,8 @@ def id_proof():
 
                 type_id = input_json["id_type"]
                 
+                type_id = input_json["id_type"]
+                
                 config_obj =  Config.query.filter(Config.id_type ==input_json["id_type"]).all()
                 logging.info(f"config_obj:{config_obj}")
                 
@@ -284,7 +286,6 @@ def value():
     try:
         image = request.files['image']
         input_json = json.load(request.files['data'])
-
         type_id = input_json["id_type"]
         
         if image:
